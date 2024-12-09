@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чат</title>
+    <style>
+        #clients, #chat {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            overflow-y: scroll;
+        }
+        #clients {
+            height: 100px;
+        }
+        #chat {
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Чат</h1>
+
+    <h3>Клиенты онлайн</h3>
+    <div id="clients"></div>
+
+    <h3>Сообщения</h3>
+    <div id="chat"></div>
+
+    <input type="text" id="message" placeholder="Введите сообщение">
+    <button onclick="sendMessage()">Отправить</button>
+
+    <script src="chat.js"></script>
+</body>
+</html>
